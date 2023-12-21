@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "./Components/Layout/Header";
-import Footer from "./Components/Layout/Footer";
-import Movies from "./Components/Pages/Movies";
-import Trending from "./Components/Pages/Trending";
-import TV from "./Components/Pages/TV";
-import Search from "./Components/Views/Search";
-import Error from "./Components/Views/Error";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Movies from "./components/pages/Movies";
+import Trending from "./components/pages/Trending";
+import TV from "./components/pages/TV";
+import Search from "./components/views/Search";
+import Error from "./components/views/Error";
 
 const App = () => {
     return (

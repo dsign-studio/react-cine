@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Pagination from "../Pages/Pagination";
+import Pagination from "../pages/Pagination";
 import { img_300, unavailable } from "../../services/config.js";
 
 const Search = () => {
