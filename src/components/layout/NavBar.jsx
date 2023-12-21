@@ -6,7 +6,7 @@ const NavBar = () => {
     const data = [
         {
             icon: "",
-            name: "React Cine - Codo a Codo 23646",
+            name: {process.env.REACT_APP_TITLE},
             link: "/",
         },
     ];

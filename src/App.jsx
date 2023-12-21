@@ -1,27 +1,31 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from './components/layout/Header.jsx';
-import Footer from './components/layout/Footer.jsx';
-import Home from "./components/pages/Home.jsx";
+import Header from "./Components/Layout/Header";
+import Footer from "./Components/Layout/Footer";
+import Movies from "./Components/Pages/Movies";
+import Trending from "./Components/Pages/Trending";
+import TV from "./Components/Pages/TV";
+import Search from "./Components/Views/Search";
+import Error from "./Components/Views/Error";
 
-import './App.css';
+const App = () => {
+    return (
+        <>
+            <BrowserRouter>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Trending />} exact />
+                    <Route path="/movies" element={<Movies />} />
+                    <Route path="/tv" element={<TV />} />
+                    <Route path="/search" element={<Search />} /> 
+                    <Route path="*" element={<Error />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </>
+    );
+};
 
-function App() {
-
-  return (
-      <div className="container-fluid">
-          <div className="row">
-              <BrowserRouter>
-                  <Header />
-                      <Routes>
-                        <Route path="/" element={<Home />} exact />
-                      </Routes>
-                  <Footer />
-              </BrowserRouter>
-          </div>
-      </div>
-  )
-}
 
 export default App;

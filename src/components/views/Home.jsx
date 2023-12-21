@@ -18,8 +18,6 @@ const Home = () => {
         fetchTrending();
     }, [page]);
 
-    //console.log(state);
-
     return (
         <>
                 <div className="row">
