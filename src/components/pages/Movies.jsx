@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { img_300, unavailable } from "../../services/config.js";
 import Pagination from "./Pagination";
 import Genre from "./Genre";
-import useGenre from "../../hooks/useGenre.js";
+import useGenre from "../../hooks/usegenre.js";
 
 const Movies = () => {
     const [state, setState] = useState([]);
