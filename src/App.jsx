@@ -5,7 +5,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Movies from "./components/pages/Movies";
 import Trending from "./components/pages/Trending";
-import TV from "./components/pages/TV";
+import TV from "./components/pages/Tv";
 import Search from "./components/views/Search";
 import Error from "./components/views/Error";
 
